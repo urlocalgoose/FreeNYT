@@ -1,0 +1,32 @@
+{
+  "name": "Free NTY",
+  "description": "haha brokie",
+  "version": "2.0.0",
+  "manifest_version": 3,
+  "icons": {
+      "16": "/images/16.png",
+      "32": "/images/32.png",
+      "48": "/images/48.png",
+      "128": "/images/128.png"
+  },
+  "background": {
+      "service_worker": "background.js"
+  },
+  "action": {
+      "default_icon": {
+          "16": "/images/16.png",
+          "32": "/images/32.png",
+          "48": "/images/48.png",
+          "128": "/images/128.png"
+      }
+  },
+  "permissions": [
+      "storage",
+      "activeTab",
+      "scripting",
+      "tabs"
+  ],
+  "host_permissions": [
+      "https://www.nytimes.com/*"
+  ]
+}
